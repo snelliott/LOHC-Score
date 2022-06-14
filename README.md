@@ -1,5 +1,5 @@
 # LOHC-Score
-A dehydrogenation scoring system for LOHC candidates based on 2D features
+A dehydrogenation scoring system for LOHC candidates based on 2D molecular features
 
 
 ## Installation
