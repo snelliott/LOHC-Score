@@ -37,8 +37,7 @@ InChI				, factor,    score,tanimoto,% wt h2,sp3_carb,sp2_carb,sp_carb,M-no5mem,
 ## Features
 Our current descriptors and their additive value, as of June 9
 
-- Cutoff threshold of 5.5 %wtH2 is treated as a cutoff parameter rather than a descriptor
-- % wt h2: 0, this feature is treated as a cutoff parameter so any under 5.5 get total scores of 0
+- % wt h2: \[0, 1\], this feature is treated as a cutoff parameter so any under 5.5 get total scores of 0
 - sp3_carb: 0.1153, number of sp3 carbons
 - sp2_carb: 0.2872, number of sp2 carbons
 - sp_carb:  1.1298, number of sp carbons
