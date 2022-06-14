@@ -38,24 +38,24 @@ InChI				, factor,    score,tanimoto,% wt h2,sp3_carb,sp2_carb,sp_carb,M-no5mem,
 Our current descriptors and their additive value, as of June 9
 
 - % wt h2: \[0, 1\], this feature is treated as a cutoff parameter so any under 5.5 get total scores of 0
-- sp3_carb: 0.1153, number of sp3 carbons
-- sp2_carb: 0.2872, number of sp2 carbons
-- sp_carb:  1.1298, number of sp carbons
-- M-no5mem: -1.2127, number of monocyclic rings that aren't 5-membered rings
-- M-5mem:   -1.6513, number of 5-membered monocyclic rings
-- M-nitcont: -0.0955, number of monocyclic rings with a nitrogen atom in the ring
-- M-SOcont: 0.9387, number of monocyclic rings with a sulfur or oxygen atoms in the ring
-- B-no5mem: 5.2805, number of bicyclic rings that don't have any 5-membered rings
-- B-5mem:   5.0358, number of 5-membered ring containing bicyclic rings
-- B-nitcont: -.3393, number of biyclic rings with a nitrogen atom in any ring
-- B-SOcont: -.0191, number of bicyclic rings with a sulfur or oxygen atoms in any ring
-- P-no5mem: 1.0000, number of polycyclic (3 or more) rings that don't have any 5-membered rings
-- P-5mem:   3.4910, number of 5-membered ring containing polycyclic rings
-- P-nitcont: 0.5179, number of polyyclic rings with a nitrogen atom in any ring
-- P-SOcont: .06033, number of polycyclic rings with a sulfur or oxygen atoms in any ring
-- nonCfuse, 0.5200, number of non-carbon atoms that are the fusion point of two rings
-- SObadpos, 0.9095, number of times a sulfur or oxygen is gamma to a fusion point
-- SO_adjrng, 2.000, number of times two fused rings both have a sulfur or oxygen
-- 3mem_bi+, 3.9448, number of times a 3-membered ring is fused to another ring
-- one-posi, -0.0735, number of substituents on a ring (including another ring)
-- onethree, -0.2623, number of 1,3 substituent or 1,3 nitrogen interactions on a ring (including another ring) onethree]}
+- sp3_carb:   0.1153  number of sp3 carbons
+- sp2_carb:   0.2872  number of sp2 carbons
+- sp_carb:    1.1298  number of sp carbons
+- M-no5mem:  -1.2127  number of monocyclic rings that aren't 5-membered rings
+- M-5mem:    -1.6513  number of 5-membered monocyclic rings
+- M-nitcont: -0.0955  number of monocyclic rings with a nitrogen atom in the ring
+- M-SOcont:   0.9387  number of monocyclic rings with a sulfur or oxygen atoms in the ring
+- B-no5mem:   5.2805  number of bicyclic rings that don't have any 5-membered rings
+- B-5mem:     5.0358  number of 5-membered ring containing bicyclic rings
+- B-nitcont: -0.3393  number of biyclic rings with a nitrogen atom in any ring
+- B-SOcont:  -0.0191  number of bicyclic rings with a sulfur or oxygen atoms in any ring
+- P-no5mem:   1.0000  number of polycyclic (3 or more) rings that don't have any 5-membered rings
+- P-5mem:     3.4910  number of 5-membered ring containing polycyclic rings
+- P-nitcont:  0.5179  number of polyyclic rings with a nitrogen atom in any ring
+- P-SOcont:   0.0603  number of polycyclic rings with a sulfur or oxygen atoms in any ring
+- nonCfuse:   0.5200  number of non-carbon atoms that are the fusion point of two rings
+- SObadpos:   0.9095  number of times a sulfur or oxygen is gamma to a fusion point
+- SO_adjrng:  2.0000  number of times two fused rings both have a sulfur or oxygen
+- 3mem_bi+:   3.9448  number of times a 3-membered ring is fused to another ring
+- one-posi:  -0.0735  number of substituents on a ring (including another ring)
+- onethree:  -0.2623  number of 1,3 substituent or 1,3 nitrogen interactions on a ring (including another ring) onethree]}
