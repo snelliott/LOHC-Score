@@ -59,7 +59,7 @@ def get_graphs(input_file, nprocs=30):
 
 
 def descriptor_counts(gra_dct, tan_dct, nprocs=30):
-    """count the number of descriptors for each INChI
+    """count the number of descriptors for each InChI
 
     :type gra_dct: dct{string: dct}
     :param gra_dct: dictionary of keys-inchi,
@@ -389,7 +389,7 @@ def score(rank_dct):
 def _command_line(ranked_lst, rank_dct):
     """ print to command line instead of to an output file
     """
-    print('INChI\t\t\t\t,', 'factor,', ','.join(rank_dct['keys']))
+    print('InChI\t\t\t\t,', ','.join(rank_dct['keys']))
     for info in ranked_lst:
         print(
             '"' + info[0] + '"' +
@@ -399,7 +399,7 @@ def _command_line(ranked_lst, rank_dct):
 
 def write_output(ranked_lst, rank_dct, out_file):
     """ write scores and features to an output file in csv format
-        'INChI,score,tanimoto,%wtH2,...'
+        'InChI,score,tanimoto,%wtH2,...'
 
     :type ranked_lst: list(list(float, ))
     :param ranked_lst: a list of lists of descriptor
@@ -414,7 +414,7 @@ def write_output(ranked_lst, rank_dct, out_file):
     if out_file == 'command_line':
         _command_line(ranked_lst, rank_dct)
     else:
-        out_str = 'INChI\t\t\t\t,' + 'factor,' + ','.join(rank_dct['keys'])
+        out_str = 'InChI\t\t\t\t,' + ','.join(rank_dct['keys'])
         out_str += '\n'
         for info in ranked_lst:
             out_str += (
@@ -431,7 +431,7 @@ def main(input_file, output_file):
 
     :type input_file: string
     :param input_file: name of a csv file that contains
-        <INChI>,<tanimoto similarity>
+        <InChI>,<tanimoto similarity>
     """
     gra_dct, tan_dct = get_graphs(input_file, nprocs=30)
     rank_dct = descriptor_counts(gra_dct, tan_dct, nprocs=30)
